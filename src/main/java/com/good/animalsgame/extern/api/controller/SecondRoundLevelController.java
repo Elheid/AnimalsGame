@@ -23,6 +23,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/second-round")
+@CrossOrigin(origins ={"http://localhost:5173","https://biodiversity-web-game.vercel.app/", "http://84.201.144.181:5173"}, allowCredentials = "true")
 @Tag(name = "SecondRoundLevelController", description = "Контроллер для управления уровнями 2 раунда")
 public class SecondRoundLevelController {
 

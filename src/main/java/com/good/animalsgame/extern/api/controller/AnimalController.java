@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/animals")
+@CrossOrigin(origins ={"http://localhost:5173","https://biodiversity-web-game.vercel.app/", "http://84.201.144.181:5173"}, allowCredentials = "true")
 @Tag(name = "AnimalController", description = "Контроллер для управления животными")
 public class AnimalController {
 

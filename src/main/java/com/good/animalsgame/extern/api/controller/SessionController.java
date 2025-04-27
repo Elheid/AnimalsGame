@@ -5,12 +5,15 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins ={"http://localhost:5173","https://biodiversity-web-game.vercel.app/", "http://84.201.144.181:5173"}, allowCredentials = "true")
 @RequestMapping("/session")
+
 @Tag(name = "SessionController", description = "Контроллер для управления HTTP-сессиями")
 public class SessionController {
 
